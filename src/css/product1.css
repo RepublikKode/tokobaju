@@ -1,0 +1,237 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-wrapper {
+    background-color: #333333;
+    border-bottom: 5px solid #fff;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #FFFF99;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    gap: 7px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.navbar-service {
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.navbar-service .list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-service .list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.navbar-service .list a:hover {
+    background-color: #5a5a5a;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.product-wrapper {
+    background-color: #fff;
+    width: 400px;
+    height: max-content;
+    margin-right: 15px;
+    margin-left: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.product-wrapper .image img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+}
+
+.info-product {
+    padding: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    margin-top: 20px;
+}
+
+.button-wrapper {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    list-style-type: none;
+   
+}
+
+.button-wrapper a {
+    background-color: green;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button-wrapper a:hover {
+    background-color: rgb(0, 192, 0);
+}
+
+@media only screen and ( max-width: 1280px ) {
+    .product-list {
+        display: grid;
+        grid-template-areas: 
+        "product-wrapper product-wrapper product-wrapper"
+        "product-wrapper product-wrapper product-wrapper"
+        ;
+    }
+
+    .product-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and ( max-width: 1114px ) {
+    .container {
+        height: 100%;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-wrapper {
+        width: 525px;
+        height: 750px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .product-wrapper .image img {
+        height: 500px;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-areas: 
+        "product-wrapper product-wrapper"
+        "product-wrapper product-wrapper"
+        "product-wrapper product-wrapper"
+        ;
+    }
+}
+
+@media only screen and ( max-width: 884px ) {
+    .product-wrapper {
+        width: 400px;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-areas: 
+        "product-wrapper product-wrapper"
+        "product-wrapper product-wrapper"
+        "product-wrapper product-wrapper"
+        ;
+    }
+}
+
+@media only screen and ( max-width: 834px ) {
+    .container {
+        height: 100%;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-wrapper {
+        width: 350px;
+        margin-top: 25px;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-areas: 
+        "product-wrapper product-wrapper"
+        "product-wrapper product-wrapper"
+        "product-wrapper product-wrapper"
+        ;
+    }
+}
+
+
+@media only screen and ( max-width:  512px ) {
+    .container {
+        height: 100%;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .banner-wrapper img {
+        height: 200px;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-wrapper {
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

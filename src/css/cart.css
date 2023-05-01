@@ -1,0 +1,124 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-wrapper {
+    background-color: #333333;
+    border-bottom: 5px solid #fff;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #FFFF99;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    gap: 7px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.navbar-service {
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.navbar-service .list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-service .list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.navbar-service .list a:hover {
+    background-color: #5a5a5a;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-wrapper {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 98%;
+    height: max-content;
+}
+
+.cart-image img {
+    border-radius: 10px 0 0 10px;
+    width: 500px;
+    height: 700px;
+    float: left;
+}
+
+.cart-stats input {
+    margin-left: 17px;
+    margin-top: 25px;
+    width: 67%;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 7px;
+    outline: none;
+}
+
+.totalHarga {
+    display: flex;
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+.totalHarga input {
+    width: 96%;
+}
+
+.row-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.hitung button, .simpan button {
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 200px;
+    height: 35px;
+}
+
+.simpan button {
+    background-color: orange;
+    color: #222;
+}
